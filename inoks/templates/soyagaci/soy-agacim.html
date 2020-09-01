@@ -41,7 +41,7 @@
                         {% else %}
 
 
-
+			{% if tree.profile.isActive is True %}
                                  new primitives.orgdiagram.ItemConfig({
                                     id: {{ tree.profile.id }},
                                     parent: {{ tree.profile.sponsor_id }},
@@ -51,6 +51,7 @@
                                     email : "{{ tree.profile.user.email }}",
                                     image: "{%  if tree.profile.user.is_active == True %} /media/{{tree.profile.profileImage}}{% else  %}/media/profile/passive-user.png  {% endif %}"
                                 }),
+			{% endif %}
 
 
                         {% endif %}
