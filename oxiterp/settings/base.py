@@ -174,7 +174,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.baven.net'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'info@baven.net'
-EMAIL_HOST_PASSWORD = 'SEhy15X0'
+EMAIL_HOST_PASSWORD = 'PRbaven19!'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
