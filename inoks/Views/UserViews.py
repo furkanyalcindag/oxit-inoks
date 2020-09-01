@@ -65,7 +65,8 @@ def return_add_users(request):
             profil.isContract = profile_form.cleaned_data['isContract']
             profil.isApprove = True
             profil.isActive = True
-            sponsorNumber = Profile.objects.filter(sponsor=profile_form.cleaned_data['sponsor']).count()
+            #sponsorNumber = Profile.objects.filter(sponsor=profile_form.cleaned_data['sponsor']).count()
+            sponsorNumber = Profile.objects.filter(sponsor=profile_form.cleaned_data['sponsor']).filter(isActive=True).count()
             sp_profile = Profile.objects.get(pk=profile_form.cleaned_data['sponsor'].pk)
 
             if sp_profile.user.groups.all()[0].name == 'Admin':
