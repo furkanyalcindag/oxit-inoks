@@ -330,7 +330,7 @@ def calculate_earning_of_tree(levelDict, total_order_member, month, year, past):
             earning = 0
 
     elif 2500 <= total_order_all < 22500:
-        if len(levelDict[str(2)]) == 3:
+        if len(levelDict[str(2)]) >= 3:
             if earningPayments.objects.filter(profile=levelDict[str(1)][0].profile).count() == 0:
                 if past:
                     tree_info_array = percent6ruleByDate(levelDict[str(1)][0].profile, month, year)
