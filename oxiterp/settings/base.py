@@ -175,8 +175,7 @@ EMAIL_HOST = 'mail.isimtescil.net'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'info@baven.net'
 EMAIL_HOST_PASSWORD = 'PRbaven19!'
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
+EMAIL_USE_TLS = False
 
 STATIC_ROOT = ''
 
